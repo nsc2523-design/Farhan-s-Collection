@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#fff5f8">
+<title>Farhan's Collection | Style with Elegance</title>
+<style>
+:root{--pink:#d96f98;--deep:#9e4268;--soft:#fff1f6;--ink:#382832;--muted:#806d77;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,"Noto Sans Bengali",sans-serif;color:var(--ink);background:#fff}
+a{color:inherit;text-decoration:none}.top{background:var(--deep);color:white;text-align:center;padding:8px 14px;font-size:13px;letter-spacing:.2px}
+header{position:sticky;top:0;z-index:10;background:#ffffffed;backdrop-filter:blur(10px);border-bottom:1px solid #f5e3eb}
+.nav{max-width:1120px;margin:auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-family:Georgia,serif;font-size:24px;font-weight:700;color:var(--deep)}.brand small{display:block;font:10px system-ui;letter-spacing:3px;text-transform:uppercase;color:var(--muted);margin-top:2px}
+.links{display:flex;gap:22px;font-size:14px;color:#634b58}.links a:hover{color:var(--pink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:30px;padding:12px 20px;background:var(--pink);color:white;font-weight:700;cursor:pointer;transition:.2s}.btn:hover{background:var(--deep);transform:translateY(-1px)}.btn.outline{background:white;color:var(--deep);border:1px solid #e9b6ca}
+.hero{background:linear-gradient(115deg,#fff3f7 0%,#fbe0e9 55%,#f8cbdc 100%);overflow:hidden}
+.hero-inner{max-width:1120px;margin:auto;padding:76px 22px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:36px;min-height:440px}
+.eyebrow{color:var(--deep);font-size:12px;font-weight:800;letter-spacing:3px;text-transform:uppercase}
+h1{font-family:Georgia,serif;font-size:clamp(42px,6vw,68px);line-height:1.05;margin:16px 0;color:#66364d}h1 em{color:var(--pink);font-style:normal}
+.hero p{color:#755d69;line-height:1.8;max-width:470px;margin-bottom:26px}
+.hero-art{height:320px;border-radius:48% 48% 22px 22px;background:linear-gradient(145deg,#f4b8cf,#fff8fa 55%,#e9a5c0);display:flex;align-items:center;justify-content:center;position:relative;box-shadow:0 22px 55px #b85b8026}
+.hero-art:before{content:"";position:absolute;width:64%;height:78%;border-radius:48% 48% 16px 16px;background:linear-gradient(145deg,#fff,#f7dce7);box-shadow:inset -18px -8px 30px #d98eaa55}
+.hero-art:after{content:"F";font:italic 100px Georgia;color:#c66a91;z-index:1;opacity:.85}
+.art-note{position:absolute;bottom:20px;right:20px;background:white;padding:12px 17px;border-radius:14px;font:italic 16px Georgia;color:var(--deep);box-shadow:0 8px 25px #8b42601c}
+section{max-width:1120px;margin:auto;padding:68px 22px}.section-head{text-align:center;margin-bottom:32px}.section-head .eyebrow{letter-spacing:2px}.section-head h2{font: bold 36px Georgia,serif;color:#63364b;margin:10px 0}.section-head p{color:var(--muted);margin:0}
+.categories{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.category{padding:26px 18px;border:1px solid #f2dce6;border-radius:18px;text-align:center;background:#fffafd}.category .emoji{font-size:34px}.category h3{margin:10px 0 4px;font: bold 20px Georgia;color:#78445b}.category p{margin:0;color:var(--muted);font-size:13px}
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.product{border:1px solid #f1e2e9;border-radius:18px;overflow:hidden;background:white;transition:.2s}.product:hover{transform:translateY(-4px);box-shadow:0 14px 35px #9e426815}
+.product-art{height:205px;display:flex;align-items:center;justify-content:center;font-size:68px;background:linear-gradient(145deg,#fff0f5,#f4c8d9)}.product:nth-child(2) .product-art{background:linear-gradient(145deg,#f8edf9,#e8d6ef)}.product:nth-child(3) .product-art{background:linear-gradient(145deg,#fff5e9,#f1dfc5)}.product:nth-child(4) .product-art{background:linear-gradient(145deg,#fcecf0,#e8c2d0)}
+.product-info{padding:15px}.product-info h3{font-size:16px;margin:0 0 6px}.product-info p{font-size:13px;color:var(--muted);margin:0 0 12px}.price{color:var(--deep);font-weight:800}
+.order{background:var(--soft);max-width:none}.order-inner{max-width:900px;margin:auto;text-align:center;padding:62px 22px}.order h2{font: bold 36px Georgia;color:#63364b;margin:0 0 12px}.order p{color:var(--muted);line-height:1.7;margin:0 auto 24px;max-width:600px}.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+footer{background:#382832;color:#fceef4;padding:34px 22px;text-align:center}footer .brand{color:#ffd5e4}footer p{color:#d8c2cc;font-size:13px;line-height:1.8}.social{display:flex;justify-content:center;gap:18px;margin:16px 0;color:#ffd5e4;font-size:14px}
+.note{font-size:12px;color:#9c7888;margin-top:20px}
+@media(max-width:760px){.links{display:none}.hero-inner{grid-template-columns:1fr;padding-top:52px}.hero-art{height:230px;max-width:420px;width:100%;margin:auto}.categories{grid-template-columns:1fr}.products{grid-template-columns:repeat(2,1fr)}section{padding:52px 16px}.product-art{height:155px}.nav{padding:12px 16px}}
+@media(max-width:390px){.products{grid-template-columns:1fr}.brand{font-size:21px}}
+</style>
+</head>
+<body>
+<div class="top">নতুন কালেকশন • সুন্দর ডিজাইন • সাশ্রয়ী দাম</div>
+<header><nav class="nav">
+<a class="brand" href="#">Farhan's Collection<small>STYLE WITH ELEGANCE</small></a>
+<div class="links"><a href="#home">হোম</a><a href="#collection">কালেকশন</a><a href="#about">আমাদের সম্পর্কে</a><a href="#contact">যোগাযোগ</a></div>
+<a class="btn" href="#collection">শপ নাও</a>
+</nav></header>
+<main>
+<div class="hero" id="home"><div class="hero-inner">
+<div><div class="eyebrow">A little touch of elegance</div><h1>Style that<br><em>feels like you.</em></h1>
+<p>আপনার পছন্দের থ্রি-পিস ও ফ্যাশন কালেকশন খুঁজে নিন Farhan's Collection-এ। প্রতিটি পছন্দে থাকুক সৌন্দর্য আর স্বাচ্ছন্দ্য।</p>
+<a class="btn" href="#collection">কালেকশন দেখুন</a> <a class="btn outline" href="#contact">অর্ডার করুন</a></div>
+<div class="hero-art"><div class="art-note">Made with love ♡</div></div>
+</div></div>
+<section id="about"><div class="section-head"><div class="eyebrow">Discover your style</div><h2>আমাদের কালেকশন</h2><p>আপনার প্রতিদিনের সাজে একটু বাড়তি সৌন্দর্য</p></div>
+<div class="categories">
+<div class="category"><div class="emoji">🌸</div><h3>থ্রি-পিস</h3><p>রুচিশীল ও আকর্ষণীয় ডিজাইন</p></div>
+<div class="category"><div class="emoji">🧵</div><h3>সেলাইয়ের কাজ</h3><p>যত্ন ও ভালোবাসায় তৈরি</p></div>
+<div class="category"><div class="emoji">🎀</div><h3>নতুন কালেকশন</h3><p>নতুন পছন্দ, নতুন স্টাইল</p></div>
+</div></section>
+<section id="collection"><div class="section-head"><div class="eyebrow">Handpicked for you</div><h2>Featured Products</h2><p>নিচের নমুনা পণ্যের জায়গায় নিজের পণ্যের ছবি ও দাম বসান</p></div>
+<div class="products">
+<article class="product"><div class="product-art">👗</div><div class="product-info"><h3>Elegant Three-Piece</h3><p>সুন্দর ও আরামদায়ক ডিজাইন</p><div class="price">দাম জানতে মেসেজ দিন</div></div></article>
+<article class="product"><div class="product-art">🌷</div><div class="product-info"><h3>Floral Collection</h3><p>ফুলেল নকশার আকর্ষণীয় পোশাক</p><div class="price">দাম জানতে মেসেজ দিন</div></div></article>
+<article class="product"><div class="product-art">✨</div><div class="product-info"><h3>Party Wear</h3><p>বিশেষ দিনের জন্য বিশেষ সাজ</p><div class="price">দাম জানতে মেসেজ দিন</div></div></article>
+<article class="product"><div class="product-art">🪡</div><div class="product-info"><h3>Custom Stitching</h3><p>আপনার পছন্দমতো সেলাই</p><div class="price">দাম জানতে মেসেজ দিন</div></div></article>
+</div><p class="note" style="text-align:center">নোট: পণ্যের নাম, ছবি ও দাম এখন নমুনা হিসেবে দেওয়া হয়েছে।</p>
+</section>
+<div class="order" id="contact"><div class="order-inner"><div class="eyebrow">We'd love to hear from you</div><h2>পছন্দ হয়েছে? অর্ডার করুন</h2><p>আপনার পছন্দের পণ্য সম্পর্কে জানতে বা অর্ডার করতে WhatsApp অথবা Facebook Messenger-এ যোগাযোগ করুন।</p>
+<div class="actions"><a class="btn" id="wa" href="https://wa.me/8801XXXXXXXXX" target="_blank" rel="noopener">WhatsApp-এ অর্ডার</a><a class="btn outline" id="fb" href="https://m.me/yourpage" target="_blank" rel="noopener">Facebook Messenger</a></div>
+<p class="note">যোগাযোগের নম্বর ও Facebook Page লিংক বসানোর পর বাটন দুটি কাজ করবে।</p>
+</div></div>
+</main>
+<footer><div class="brand">Farhan's Collection</div><p>Style with Elegance<br>আপনার ভালোবাসা ও আস্থাই আমাদের অনুপ্রেরণা।</p><div class="social"><a href="#collection">Collection</a><a href="#contact">Contact</a></div><small>© 2026 Farhan's Collection. All rights reserved.</small></footer>
+</body></html>
